@@ -86,6 +86,8 @@ void indexAddNode(int n, int sizeNode, Node* node = NULL) {
         cout<<"Out of range - The index is greater than the maximum value"<<endl;
         return;
     }
+    previous=node;
+    current=node->next;
     indexAddNode(n, --sizeNode, node->next);
 }
 //remove element of LinkedList
